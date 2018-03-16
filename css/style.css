@@ -74,8 +74,8 @@ body{
 
 .svg-large {
     display: block;
-    font: 35em 'Montserrat';
-    width: 500px;
+    font: 25em 'Montserrat';
+    width: 396px;
     height: 540px;
     margin:auto;
     position: relative;
@@ -84,6 +84,21 @@ left: 50%;
 -ms-transform: translateX(-50%);
 transform: translateX(-50%);
 }
+
+@media (min-width: 576px) { 
+    .svg-large {
+        display: block;
+        font: 35em 'Montserrat';
+        width: 500px;
+        height: 540px;
+        margin:auto;
+        position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    }
+  }
 
 .text-copy {
     fill: none;
