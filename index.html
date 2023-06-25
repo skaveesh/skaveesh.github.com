@@ -26,10 +26,13 @@
 
 <body>
 
-<!-- particles.js container -->
-<div id="particles-js" style="position:fixed; top:0; left: 0; width: 100vw; height: 100vh; z-index:0"></div>
+<button id="minimal-button" style="position: fixed; z-index: 100; bottom: 0; right: 0;">Minimal View</button>
 
-<div class="container" style="position: relative; pointer-events: none">
+<!-- particles.js container -->
+<div style="position:fixed; top:0; left: 0; width: 100vw; height: 100vh; z-index:0"></div>
+<div id="particles-js" style="visibility: hidden; position:fixed; top:0; left: 0; width: 100vw; height: 100vh; z-index:0"></div>
+
+<div class="container" style="position: relative;">
 
     <div class="row-div-scroll row" style="text-align: center; margin: 0 auto">
 
@@ -45,41 +48,53 @@
 
                 <br/>
 
+                <img alt="Samintha Kaveesh profile picture" src="img/profile.png" style="width: 200px; border-radius: 50%; border: 5px solid #ffffff;"/>
+                
+                <br/>
+
                 <h2>I'm a Software Engineer based in Colombo, Sri Lanka.</h2>
 
-                <h2>With extensive ~5 years of experience, working in an Agile-driven environment on Java, Spring Boot, IAM technologies 
-                    in a cross functional team, focused on millions of user’s identities and access management. I'm exploring other technical path on new 
-                    emerging trends like iOS Mobile Development, Swift, Rust, Go, or any other new technologies.</h2>
+                <h4>With extensive ~5 years of experience, working in an Agile-driven environment on Java, Spring Boot, IAM technologies 
+                    in a cross-functional team, focused on millions of user’s identities and access management. I'm exploring other technical path on new
+                    emerging trends like iOS Mobile Development, Swift, Rust, Go, or any other new technologies.</h4>
 
             </div>
 
             <div class="follow-me-social-icons" style="text-align:center;">
                 <br/>
-                <p style="cursor:default">Find me on</p>
-                <ul class="social-icons" style="pointer-events: initial">
+                <p style="cursor:default">Mail me on</p>
+                <ul class="social-icons" style="padding: 0">
                     <li>
-                        <a href="https://www.linkedin.com/in/skaveesh/" target="_blank" class="social-icon">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
+                        <ul style="padding: 0">
+                            <a href="https://www.linkedin.com/in/skaveesh/" target="_blank" class="social-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </ul>
+                        <ul style="padding: 0">
+                            <a href="https://stackoverflow.com/users/5410830/samintha-kaveesh" target="_blank"
+                               class="social-icon">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        </ul>
+                        <ul style="padding: 0">
+                            <a href="https://www.github.com/skaveesh" target="_blank" class="social-icon">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </ul>
+                        <ul style="padding: 0">
+                            <a href="mailto:skaveesh@gmail.com?subject=Hello" target="_blank" class="social-icon">
+                                <i class="fa fa-google"></i>
+                            </a>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="https://stackoverflow.com/users/5410830/samintha-kaveesh" target="_blank"
-                           class="social-icon">
-                            <i class="fa fa-stack-overflow"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.github.com/skaveesh" target="_blank" class="social-icon">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </li>
+
                 </ul>
 
                 <a href="mailto:skaveesh@gmail.com?subject=Hello" class="an-email">skaveesh@gmail.com</a>
 
             </div>
 
-            <a href="#2" class="scroll absolute-center scroll-arrow a-href">Scroll see my working experience</a>
+            <a href="#experience" class="scroll absolute-center scroll-arrow a-href">Scroll see my working experience</a>
         </div>
 
 
@@ -92,18 +107,228 @@
             <br>
             <br>
 
-            <h2>Skills</h2>
+            <h2>Working Experience</h2>
 
             <br>
 
-            <h3>Main area of my expertise towards the web technologies. Most of the time I play around with HTML, CSS,
-                JS, TS, Angular 2-6, Java, Java Spring, JPA, Firebase and also Android.</h3>
-            <h3>I have also some experience with MySQL DB and Amazon AWS technologies.</h3>
-            <h3>I have developed projects, Digital Menus for Restaurants, Learning Management Systems, Live Locators for
-                GPS Tracking Systems and so on.</h3>
-            <h3>Also have some designing skills with Photoshop.</h3>
+            <div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <img alt="Wiley logo" src="img/wiley_logo.png" width="100px"/>
+                        </td>
+                        <td style="text-align: left;">
+                            <h3>Senior Software Engineer</h3>
+                            <h5>Wiley (John Wiley & Sons, Inc.)</h5>
+                            <h6>Jul 2022 - Present (~1 year)</h6>
+                        </td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <td colspan="2">
+                            <ul style="list-style-type:square;">
+                                <li style="padding: 10px;">Working as a Java, Spring Boot senior software engineer, on Wiley's one of the most critical systems – ALM (Access & License Management) which is an IAM (Identity & Access Management) & Licensing middleware software and it's the gateway to Wiley for millions of Wiley Customers.</li>
+                                <li style="padding: 10px;">Working with UK-based WOL (Wiley Online Library) architects to work on a solution for a redundant license management system that affects millions of licenses to improve performance and efficiency in a test-driven approach.</li>
+                                <li style="padding: 10px;">Actively participating in architectural design discussions & provide suggestions.</li>
+                                <li style="padding: 10px;">Project-related idea gathering and discussions with US/UK stakeholders.</li>
+                                <li style="padding: 10px;">Providing guidance and support to junior team members as they navigate through the software development process.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-            <a href="#3" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+            <a href="#wiley-se" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col-sm-12" style="text-align:center; cursor:default;">
+
+            <br>
+            <br>
+
+            <h2>Working Experience</h2>
+
+            <br>
+
+            <div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <img alt="Wiley logo" src="img/wiley_logo.png" width="100px"/>
+                        </td>
+                        <td style="text-align: left;">
+                            <h3>Software Engineer</h3>
+                            <h5>Wiley (John Wiley & Sons, Inc.)</h5>
+                            <h6>Apr 2021 - Jul 2022 (1 year 4 months)</h6>
+                        </td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <td colspan="2">
+                            <ul style="list-style-type:square;">
+                                <li style="padding: 10px;">Worked as a Java, Spring Boot software engineer on Wiley's one of the most critical systems – ALM.</li>
+                                <li style="padding: 10px;">Focused on IAM technologies like OIDC, Keycloak, and Identity Providers.</li>
+                                <li style="padding: 10px;">Actively contributed to major production releases which affected millions of users & thousands of customers on the Wiley platform.</li>
+                                <li style="padding: 10px;">As an engineer, worked with other teams to rectify issues of Keycloak clients and integrated Keycloak with MS Azure AD IDP.</li>
+                                <li style="padding: 10px;">Investigated instance's statuses, anomalies, and performance with Dynatrace & worked on performance improvement on several Spring Boot applications and deployed to Docker platform.</li>
+                                <li style="padding: 10px;">Contributed to ReactJS, FreeMarker, user login/registration front-end system.</li>
+                                <li style="padding: 10px;">Contributed & presented at a Hackathon & "Innovation Week" on Keycloak access with face recognition/ Location based DB/ Fat JARs and Thin JARs on Docker/ OpenCV image-processing.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <a href="#pearson-ase" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col-sm-12" style="text-align:center; cursor:default;">
+
+            <br>
+            <br>
+
+            <h2>Working Experience</h2>
+
+            <br>
+
+            <div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <img alt="Pearson logo" src="img/pearson_logo.png" width="100px"/>
+                        </td>
+                        <td style="text-align: left;">
+                            <h3>Associate Software Engineer</h3>
+                            <h5>Pearson</h5>
+                            <h6>Apr 2019 - Apr 2021 (2 years)</h6>
+                        </td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <td colspan="2">
+                            <ul style="list-style-type:square;">
+                                <li style="padding: 10px;">Worked as a Java, Spring Boot software engineer on a crossfunctional team to deliver cutting-edge educational solutions in the global education space while getting a hands-on experience with the design and implementation of consumer provider integration system domain and infrastructure.</li>
+                                <li style="padding: 10px;">Worked on middleware with different LMS applications (Moodle, Canvas, D12, Blackboard) & Tool Providers with LTI Standard.</li>
+                                <li style="padding: 10px;">Supported production environment for troubleshooting issues.</li>
+                                <li style="padding: 10px;">"Eyes on the Glass" - Monitored applications throughout the peak times, using New Relic, Grafana, and Kibana.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <a href="#lyricx-dev" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col-sm-12" style="text-align:center; cursor:default;">
+
+            <br>
+            <br>
+
+            <h2>Working Experience</h2>
+
+            <br>
+
+            <div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <img alt="LyricX logo" src="img/lyricx_logo.png" width="50px"/>
+                        </td>
+                        <td style="text-align: left;">
+                            <h3>Freelance Full Stack Developer</h3>
+                            <h5>LyricX</h5>
+                            <h6>Nov 2018 - Apr 2019 (6 months)</h6>
+                        </td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <td colspan="2">
+                            <ul style="list-style-type:square;">
+                                <li style="padding: 10px;">Worked as a Java, Spring Boot, and Angular full-stack software developer on a song lyrics viewer application that supports sharing lyrics among a group of other users in real-time.</li>
+                                <li style="padding: 10px;">Focused on the user experience and system design as a Full Stack Developer.</li>
+                                <li style="padding: 10px;">Had an opportunity to create interactive UI and UX with Adobe XD and worked on ER Diagrams and Database designs.</li>
+                                <li style="padding: 10px;">Had design discussions and reviews with the client.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <a href="#cg-intern" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col-sm-12" style="text-align:center; cursor:default;">
+
+            <br>
+            <br>
+
+            <h2>Working Experience</h2>
+
+            <br>
+
+            <div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <img alt="CodeGen logo" src="img/codegen_logo.png" width="100px"/>
+                        </td>
+                        <td style="text-align: left;">
+                            <h3>Software Engineering Trainee</h3>
+                            <h5>CodeGen International</h5>
+                            <h6>Jan 2017 - Jul 2017 (7 months)</h6>
+                        </td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <td colspan="2">
+                            <ul style="list-style-type:square;">
+                                <li style="padding: 10px;"> Worked on Java, Spring Boot, and Angular technologies on a multi-tenant restaurant menu & order managing system as a full-stack software engineering intern, learning ER diagrams, DB designs, and system designs in a real-world environment.</li>
+                                <li style="padding: 10px;">Developed an Android application to manage the orders which each generates with a QR code, along with an Angular application for customers to place orders in real-time.</li>
+                                <li style="padding: 10px;">Got hands-on experience using AWS RDS (MySQL), and Google Firebase Auth for authentication and the deployments were on the AWS Elastic Beanstalk and AWS S3 for SPA (Angular 2).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <a href="#medium-articles" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col-sm-12" style="text-align:center; cursor:default;">
+
+            <br>
+            <br>
+
+            <h2>Medium Articles</h2>
+
+            <br>
+
+            <div id="results">
+                No results.
+            </div>
+
+            <a href="#projects" class="scroll absolute-center scroll-arrow a-href">Scroll to see my projects</a>
 
         </div>
 
@@ -118,101 +343,7 @@
                 <div class="col-sm-12">
                     <br>
                     <br>
-                    <h2>Learning Management System</h2>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-sm-12">
-
-                    <div style="top: 50vh;">
-                        <span class="small-chip" style="background: #787cb3;">PHP</span>
-                        <span class="small-chip" style="background: #ee6e73;">Materialize CSS</span>
-                        <span class="small-chip" style="background: #ff4c1e;">HTML</span>
-                        <span class="small-chip" style="background: #0074bc;">CSS</span>
-                        <span class="small-chip" style="background: #e38e1e;">MySQL</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="row h-100">
-
-                <div class="col-sm-12 h-100 absolute-center">
-
-                    <!--new content-->
-                    <img src="img/sksc.png" alt="Learning Management System" class="absolute-center responsive-wide-image">
-
-                </div>
-
-                <a href="#4" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="row-div-scroll row">
-
-        <div class="col" style="text-align: center;">
-
-            <div class="row">
-
-                <div class="col-sm-12">
-                    <br>
-                    <br>
-                    <h2>Stock Market Simulator</h2>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-sm-12">
-
-                    <div style="top: 50vh;">
-                        <span class="small-chip" style="background: #b52e31;">Angular 6</span>
-                        <span class="small-chip" style="background: #f8981d;">Java</span>
-                        <span class="small-chip" style="background: #ff4c1e;">HTML</span>
-                        <span class="small-chip" style="background: #0074bc;">CSS</span>
-                        <span class="small-chip" style="background: #e38e1e;">MySQL</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="row h-100">
-
-                <div class="col-sm-12 h-100 absolute-center">
-
-                    <!--new content-->
-                    <img src="img/simulator.png" alt="Stock Market Simulator" class="absolute-center responsive-wide-image">
-
-                </div>
-
-                <a href="#5" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="row-div-scroll row">
-
-        <div class="col" style="text-align: center;">
-
-            <div class="row">
-
-                <div class="col-sm-12">
-                    <br>
-                    <br>
-                    <h2>Foker</h2>
+                    <h2>Project: Keycloak Face Authentication</h2>
                 </div>
 
             </div>
@@ -224,7 +355,9 @@
                     <div style="top: 50vh;">
                         <span class="small-chip" style="background: #f8981d;">Java</span>
                         <span class="small-chip" style="background: #6db33f;">Spring Boot</span>
-                        <span class="small-chip" style="background: #53829d;">JavaFX</span>
+                        <span class="small-chip" style="background: #0074bc;">Keycloak</span>
+                        <span class="small-chip" style="background: #ff4c1e;">Amazon Rekognition</span>
+                        <span class="small-chip" style="background: #e38e1e;">Face-api.js</span>
                     </div>
 
                 </div>
@@ -233,14 +366,22 @@
 
             <div class="row h-100">
 
-                <div class="col-sm-12 h-100 absolute-center">
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>Developed a new face recognition factor for MFA as a plugin for Keycloak.</li>
+                    <li>Implemented a registration workflow with having ability to capture the user’s face.</li>
+                    <li>Authenticate users with face recognition as a two-factor authentication.</li>
+                    <li>For more detailed overview visit the GitHub repository.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/keycloak-face-authentication">https://github.com/skaveesh/keycloak-face-authentication</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
 
                     <!--new content-->
-                    <img src="img/foker.png" alt="Foker" class="absolute-center responsive-wide-image">
+                    <img alt="Face Auth" src="img/faceauth.png" class="absolute-center responsive-wide-image shadow_project_image">
 
                 </div>
 
-                <a href="#6" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+                <a href="#restaurant-menu" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
 
             </div>
 
@@ -257,7 +398,7 @@
                 <div class="col-sm-12">
                     <br>
                     <br>
-                    <h2>Restaurant Menu</h2>
+                    <h2>Project: Restaurant Menu</h2>
                 </div>
 
             </div>
@@ -284,14 +425,23 @@
 
             <div class="row h-100">
 
-                <div class="col-sm-12 h-100 absolute-center">
+                <ul style="list-style-type:square; text-align: left;">
+                    <li>A multi tenant application for restaurants.</li>
+                    <li>Waiters can generate orders by a unique URL as a QR code which is unique to each order.</li>
+                    <li>Customers in the restaurant can scan and login to the menu by the QR code generated by the waiter for their order.</li>
+                    <li>Orders are viewable by any person in the kitchen and can notify the waiter when the order is prepared.</li>
+                    <li>When user is ready, waiter is notified by a publisher subscriber queue mechanism.</li>
+                    <li>Deployed in AWS Beanstalk and S3</li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
 
                     <!--new content-->
-                    <img src="img/rmenu.png" alt="Restaurant Menu" class="absolute-center responsive-wide-image">
+                    <img alt="Restaurant Menu" src="img/rmenu.png" class="absolute-center responsive-wide-image">
 
                 </div>
 
-                <a href="#7" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+                <a href="#lyricx" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
 
             </div>
 
@@ -308,7 +458,175 @@
                 <div class="col-sm-12">
                     <br>
                     <br>
-                    <h2>ExpenX</h2>
+                    <h2>Project: LyricX</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div style="top: 50vh;">
+                        <span class="small-chip" style="background: #7ac060;">Android</span>
+                        <span class="small-chip" style="background: #f8981d;">Java</span>
+                        <span class="small-chip" style="background: #6db33f;">Spring Boot</span>
+                        <span class="small-chip" style="background: #b52e31;">Angular 8</span>
+                        <span class="small-chip" style="background: #ff4c1e;">HTML</span>
+                        <span class="small-chip" style="background: #0074bc;">CSS</span>
+                        <span class="small-chip" style="background: #ffcb2c;">Firebase</span>
+                        <span class="small-chip" style="background: #e38e1e;">MySQL</span>
+                        <span class="small-chip" style="background: #8e1186;">JPA</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row h-100">
+
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>An application to manager song lyric with their guitar chords.</li>
+                    <li>Main feature is to share lyrics among friends in real time.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/LyricX-Angular-Web">https://github.com/skaveesh/LyricX-Angular-Web</a></li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/LyricX-SpringBoot-API">https://github.com/skaveesh/LyricX-SpringBoot-API</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
+
+                    <!--new content-->
+                    <img alt="LyricX" src="img/lyricx.png" alt="LyricX" class="absolute-center responsive-wide-image shadow_project_image">
+
+                </div>
+
+                <a href="#geo-load-balanced" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col" style="text-align: center;">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <h2>Project: POC of Geo Load-Balancing Application</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div style="top: 50vh;">
+                        <span class="small-chip" style="background: #f8981d;">Java</span>
+                        <span class="small-chip" style="background: #6db33f;">Spring Boot</span>
+                        <span class="small-chip" style="background: #e38e1e;">MySQL</span>
+                        <span class="small-chip" style="background: #8e1186;">JPA</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row h-100">
+
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>This project is about Geo Load-balancing and Geo Partitioned data.</li>
+                    <li>This could be useful when it comes to the performances, since the user will be redirected to the closest location that application resides.</li>
+                    <li>Another use case of Geo Load-balancing is to implement Geo-Partitioned data.</li>
+                    <li>Geo-Partitioned data is keep the data in selected Geographical Locations by partitioning the data.</li>
+                    <li>This is useful when storing PII (Personally Identifiable Information) data within the country to stick with the regulatory compliance requirements such as GDPR.</li>
+                    <li>For more detailed overview visit the GitHub repository.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/geo-loadbalanced-service">https://github.com/skaveesh/geo-loadbalanced-service</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
+
+                    <!--new content-->
+                    <img alt="Geo Load Balancing Architecture Diagram" src="img/geoload.png" class="absolute-center responsive-wide-image shadow_project_image">
+
+                </div>
+
+                <a href="#universal-cmd" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col" style="text-align: center;">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <h2>Project: Universal Command Line Utility</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div style="top: 50vh;">
+                        <span class="small-chip" style="background: #8c1919;">Rust</span>
+                        <span class="small-chip" style="background: #e38e1e;">JavaScript</span>
+                        <span class="small-chip" style="background: #ff4c1e;">HTML</span>
+                        <span class="small-chip" style="background: #0074bc;">CSS</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row h-100">
+
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>This utility offers a range of features to help users navigate through the CLI more efficiently.</li>
+                    <li>A main feature that was implemented to allow users to search and filter through commands, eliminating the need to memorize every command or search for them manually</li>
+                    <li>Other features include users to record their command history for a specific application or service, making it easier to access and repeat previously executed commands.</li>
+                    <li>For more detailed overview visit the GitHub repository.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/universal-cmd-util">https://github.com/skaveesh/universal-cmd-util</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
+
+                    <!--new content-->
+                    <img alt="Universal Command Line Utility" src="img/universalcmd.png" class="absolute-center responsive-wide-image shadow_project_image">
+
+                </div>
+
+                <a href="#expenx" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col" style="text-align: center;">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <h2>Project: ExpenX</h2>
                 </div>
 
             </div>
@@ -329,15 +647,25 @@
 
             <div class="row h-100">
 
-                <div class="col-sm-12 h-100 absolute-center">
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>Feature rich money management Android application.</li>
+                    <li>Expenses can be recorded over any period.</li>
+                    <li>Can upload photos as proof of bills, and expenses are shown in graphs.</li>
+                    <li>Has an inbuilt currency converter calling a 3rd party API.</li>
+                    <li>Has an algorithm to calculate expenses forecasting.</li>
+                    <li>Implemented for a university project.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/ExpenX">https://github.com/skaveesh/ExpenX</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
 
                     <!--new content-->
-                    <img src="img/expenx.png" alt="ExpenX" class="absolute-center"
+                    <img alt="ExpenX" src="img/expenx.png" class="absolute-center"
                          style="height: 80%;">
 
                 </div>
 
-                <a href="#8" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+                <a href="#stock-simulator" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
 
             </div>
 
@@ -354,7 +682,170 @@
                 <div class="col-sm-12">
                     <br>
                     <br>
-                    <h2>Pick the Bus</h2>
+                    <h2>Project: Stock Market Simulator</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div style="top: 50vh;">
+                        <span class="small-chip" style="background: #b52e31;">Angular 6</span>
+                        <span class="small-chip" style="background: #f8981d;">Java</span>
+                        <span class="small-chip" style="background: #ff4c1e;">HTML</span>
+                        <span class="small-chip" style="background: #0074bc;">CSS</span>
+                        <span class="small-chip" style="background: #e38e1e;">MySQL</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row h-100">
+
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>Stock market simulator game for learn stock trading.</li>
+                    <li>Several people can join the game in the same time.</li>
+                    <li>Anyone can register and challenge others to trade and win.</li>
+                    <li>One has to earn high income within the time limit and surpass others to win.</li>
+                    <li>Implemented for a university project.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/UCD_FinalProject_SAVICK">https://github.com/skaveesh/UCD_FinalProject_SAVICK</a></li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/frontend-ucd-finalproject-savick">https://github.com/skaveesh/frontend-ucd-finalproject-savick</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
+
+                    <!--new content-->
+                    <img alt="Stock Market Simulator" src="img/simulator.png" class="absolute-center responsive-wide-image">
+
+                </div>
+
+                <a href="#foker" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col" style="text-align: center;">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <h2>Project: Foker</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div style="top: 50vh;">
+                        <span class="small-chip" style="background: #f8981d;">Java</span>
+                        <span class="small-chip" style="background: #6db33f;">Spring Boot</span>
+                        <span class="small-chip" style="background: #53829d;">JavaFX</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row h-100">
+
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>A Poker game that can be played by 2-5 players.</li>
+                    <li>Game and player communication are done using Socket communication.</li>
+                    <li>Implemented for a university project.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/FokerGame">https://github.com/skaveesh/FokerGame</a></li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/FokerServer">https://github.com/skaveesh/FokerServer</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
+
+                    <!--new content-->
+                    <img alt="Foker" src="img/foker.png" class="absolute-center responsive-wide-image">
+
+                </div>
+
+                <a href="#layered-jar" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col" style="text-align: center;">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <h2>Project: Layered JARs in Docker using Spring Boot</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div style="top: 50vh;">
+                        <span class="small-chip" style="background: #f8981d;">Java</span>
+                        <span class="small-chip" style="background: #6db33f;">Spring Boot</span>
+                        <span class="small-chip" style="background: #53829d;">Docker</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row h-100">
+
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>This POC is to compare and contrast against various JAR build types.</li>
+                    <li>This is because the increasing use of DevOps processes and microservice architecture has raised the importance of the footprint of the application.</li>
+                    <li>This means the smaller the application size the better it is for the DevOps process, it will take less time to build and optimize the upload time.</li>
+                    <li>For more detailed overview visit the GitHub repository.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/poc-docker-layered-jars">https://github.com/skaveesh/poc-docker-layered-jars</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
+
+                    <!--new content-->
+                    <img alt="Layered JARs in Docker using Spring Boot" src="img/dockerlayered.png" class="absolute-center responsive-wide-image shadow_project_image">
+
+                </div>
+
+                <a href="#pick-the-bus" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col" style="text-align: center;">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <h2>Project: Pick the Bus</h2>
                 </div>
 
             </div>
@@ -376,15 +867,23 @@
 
             <div class="row h-100">
 
-                <div class="col-sm-12 h-100 absolute-center">
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>An Android application to view a real time locations of public transportation.</li>
+                    <li>When Location updates in shows in a Google map based view.</li>
+                    <li>PubNub is used to publish location data to subscribers (Other Android applications).</li>
+                    <li>Implemented for a university project.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/PickTheBus">https://github.com/skaveesh/PickTheBus</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
 
                     <!--new content-->
-                    <img src="img/pickthebus.png" alt="Pick the Bus" class="absolute-center"
+                    <img alt="Pick the Bus" src="img/pickthebus.png" class="absolute-center"
                          style="height: 80%;">
 
                 </div>
 
-                <a href="#9" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+                <a href="#lms" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
 
             </div>
 
@@ -401,7 +900,114 @@
                 <div class="col-sm-12">
                     <br>
                     <br>
-                    <h2>Line Following Robot</h2>
+                    <h2>Project: Learning Management System</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div style="top: 50vh;">
+                        <span class="small-chip" style="background: #787cb3;">PHP</span>
+                        <span class="small-chip" style="background: #ee6e73;">Materialize CSS</span>
+                        <span class="small-chip" style="background: #ff4c1e;">HTML</span>
+                        <span class="small-chip" style="background: #0074bc;">CSS</span>
+                        <span class="small-chip" style="background: #e38e1e;">MySQL</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row h-100">
+
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>LMS to upload tutorials, view lecture calendar, view courses and gallery.</li>
+                    <li>Hosted to a public domain through a C-Panel.</li>
+                    <li>Implemented for a university project.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/SKSCLMS">https://github.com/skaveesh/SKSCLMS</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
+
+                    <!--new content-->
+                    <img alt="Learning Management System" src="img/sksc.png" class="absolute-center responsive-wide-image">
+
+                </div>
+
+                <a href="#lights-off" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col" style="text-align: center;">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <h2>Project: Lights Off</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div style="top: 50vh;">
+                        <span class="small-chip" style="background: #7ac060;">Android</span>
+                        <span class="small-chip" style="background: #f8981d;">Java</span>
+                        <span class="small-chip" style="background: #f7d22f;">Firebase Cloud Messaging</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row h-100">
+
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>Android application and a separate background running service to lock the device remotely.</li>
+                    <li>Implemented to work by invoking Android Device administration API.</li>
+                    <li>Anyone can configure a Firebase project and add an API key to work.</li>
+                    <li>A notification can be displayed with sound or discreetly.</li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
+
+                    <!--new content-->
+                    <img alt="Pick the Bus" src="img/lightsoff.png" class="absolute-center shadow_project_image"
+                         style="height: 80%;">
+
+                </div>
+
+                <a href="#line-follow-robot" class="scroll absolute-center scroll-arrow a-href">Scroll for more</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row-div-scroll row">
+
+        <div class="col" style="text-align: center;">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <br>
+                    <br>
+                    <h2>Project: Line Following Robot</h2>
                 </div>
 
             </div>
@@ -421,10 +1027,17 @@
 
             <div class="row h-100">
 
-                <div class="col-sm-12 h-100 absolute-center">
+                <ul style="list-style-type:square; text-align: left; z-index: 50">
+                    <li>LMS to upload tutorials, view lecture calendar, view courses and gallery.</li>
+                    <li>Hosted to a public domain through a C-Panel.</li>
+                    <li>Implemented for a university project.</li>
+                    <li><a target="_blank" href="https://github.com/skaveesh/SKSCLMS">https://github.com/skaveesh/SKSCLMS</a></li>
+                </ul>
+
+                <div class="col-sm-12 h-75 absolute-center">
 
                     <!--new content-->
-                    <img src="img/linefollow.png" alt="Line Following Robot" class="absolute-center"
+                    <img alt="Line Following Robot" src="img/linefollow.png" class="absolute-center"
                          style="width: 90%;">
 
                 </div>
@@ -444,9 +1057,9 @@
 </script>
 
 <!-- scripts -->
-<script src="js/particles.js"></script>
+<script id="particle_script" src="js/particles.js"></script>
 <script src="js/app.js"></script>
-
+<script src="js/articles.medium.js"></script>
 
 </body>
 

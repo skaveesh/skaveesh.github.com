@@ -7,6 +7,41 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
+let isEnabled = true;
+
+const urlParams = new URLSearchParams(window.location.search);
+const minimalViewParam = urlParams.get('minimalView');
+
+let particleCanvas = document.getElementById("particles-js");
+let minimalButton = document.getElementById("minimal-button");
+let elems = document.querySelectorAll('body,p,h1,h2,h3,h4,h5,h6,.an-email');
+
+minimalButton.addEventListener("click", toggleEnable);
+
+/* this will check user has clicked on Minimal View button or 
+has ?minimalView=true on path params. */
+function toggleEnable(event) {
+
+  if (event === null) {
+    isEnabled = !(minimalViewParam !== null && minimalViewParam === 'true');
+  }
+
+  if (!isEnabled) {
+    pJSDom[0].pJS.particles.move.enable = false;
+    particleCanvas.style.visibility = 'hidden';
+    minimalButton.innerHTML = 'Default View';
+    elems.forEach(el => el.style.color = 'black');
+  } else {
+    pJSDom[0].pJS.particles.move.enable = true;
+    pJSDom[0].pJS.fn.particlesRefresh();
+    particleCanvas.style.visibility = 'visible';
+    minimalButton.innerHTML = 'Minimal View';
+    elems.forEach(el => el.style.color = 'white');
+  }
+
+  isEnabled = !isEnabled;
+}
+
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
@@ -1516,6 +1551,9 @@ window.particlesJS = function(tag_id, params){
   if(canvas != null){
     pJSDom.push(new pJS(tag_id, params));
   }
+
+  // reading the query param and enable/disable minimal view
+  toggleEnable(null);
 
 };
 
